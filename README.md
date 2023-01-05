@@ -33,6 +33,19 @@
 Также по факту прохождения теста отправляется уведомление с результатами в Telegram.
 
 Браузер в UI-тестах запускается удаленно в Selenoid.
+    
+## :heavy_check_mark: Кратко
+
+- [x] Page Object с шагами Fluent of Invocations
+Application Manager
+Параметризованный запуск тестов
+Request/response спецификация для API тестов
+Self-documenting code
+Запуск тестов, используя Jenkins и Selenoid
+Allure Reports с вложениями (логи, скриншоты, видео)
+Логирование requests/responses в Allure Reports
+Отправка результатов тестирования в Telegram
+
 
 
 
