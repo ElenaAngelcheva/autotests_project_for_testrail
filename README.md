@@ -36,11 +36,10 @@
     
 ## :heavy_check_mark: Кратко
 
-- [x] Page Object с шагами Fluent of Invocations
+- [x] ```Page Object```
 - [x] Application Manager
 - [x] Параметризованный запуск тестов
 - [x] Request/response спецификация для API тестов
-- [x] Self-documenting code
 - [x] Запуск тестов, используя Jenkins и Selenoid
 - [x] Allure Reports с вложениями (логи, скриншоты, видео)
 - [x] Логирование requests/responses в Allure Reports
