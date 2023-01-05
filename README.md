@@ -59,6 +59,19 @@
   <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/Allure.svg" title="Allure" alt="Allure" width="40" height="40"/>&nbsp; 
   <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/telegram.png" title="Telegram" alt="Telegram" width="40" height="40"/>&nbsp;
  </div>
+    
+## :heavy_check_mark: Реализованные API-проверки
+
+> - Создание нового проекта зарегистрированным пользователем
+    - все поля заполненны валидными значениям;
+    - заполненно только поле "Название проекта", количество символов < 250;
+    - заполненно только поле "Название проекта", количество символов = 250;
+    - заполненно только поле "Название проекта", количество символов > 250;
+    - все поля заполненны валидными значениям, поле "Название проекта" не заполненно; 
+    - все поля не заполненны; 
+    
+  
+
 
 
 
