@@ -47,6 +47,18 @@
 
     
  ## :hammer_and_wrench: Технологии и инструменты:
+ 
+  ---
+  <div>
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/python.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;   
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/pycharm.png" title="Pycharm" alt="Pycharm" width="40" height="40"/>&nbsp; 
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/pytest.svg" title="Pytest" alt="Pytest" width="40" height="40"/>&nbsp;   
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/selenium.svg" title="Selenium" alt="Selenium" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/selene.png" title="Selene" alt="Selene" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/selenoid.png" title="Selenoid" alt="Selenoid" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/jenkins.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/Allure.svg" title="Allure" alt="Allure" width="40" height="40"/>&nbsp;
+  ---
     
 
 
