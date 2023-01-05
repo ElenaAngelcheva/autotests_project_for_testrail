@@ -37,13 +37,13 @@
 ## :heavy_check_mark: Кратко
 
 - [x] ```Page Object```
-- [x] Application Manager
+- [x] ```Application Manager```
 - [x] Параметризованный запуск тестов
-- [x] Request/response спецификация для API тестов
-- [x] Запуск тестов, используя Jenkins и Selenoid
-- [x] Allure Reports с вложениями (логи, скриншоты, видео)
-- [x] Логирование requests/responses в Allure Reports
-- [x] Отправка результатов тестирования в Telegram
+- [x] ```Request/response``` спецификация для API тестов
+- [x] Запуск тестов, используя ```Jenkins``` и ```Selenoid```
+- [x] ```Allure Reports``` с вложениями (логи, скриншоты, видео)
+- [x] Логирование ```Requests/responses``` в ```Allure Reports```
+- [x] Отправка результатов тестирования в ```Telegram```
 
 
 
