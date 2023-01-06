@@ -125,9 +125,8 @@
 
 ## :movie_camera: Пример видео тестового прогона
 
-В отчетах Allure для каждого UI-теста прикреплен не только скриншот, но и видео прохождения теста
-    
-<video src='https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/video.mp4' width=180/>
+В отчетах Allure для каждого UI-теста прикреплен не только скриншот, но и видео прохождения теста  
+<video src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/video.mp4"></video>
     
 ##  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/telegram.png" title="Telegram" alt="Telegram" width="40" height="40"/>&nbsp; Telegram
     Настроена отправка отчета в Telegram
