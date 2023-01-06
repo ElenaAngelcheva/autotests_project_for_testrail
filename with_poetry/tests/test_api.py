@@ -11,7 +11,7 @@ from with_poetry.Schema.testrail import CreatePprojectSchema
 @allure.story('Working with the project')
 @allure.severity(Severity.CRITICAL)
 @allure.title('Add, select, update, delete project')
-def test_add_select_update_delete_project(testrail_session, delete_project_api, aunthatification):
+def test_add_select_update_delete_project(testrail_session, delete_project_before, aunthatification):
     with allure.step('Add project'):
         response_add = testrail_session.post(url='/add_project',
                   headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'},
@@ -58,7 +58,8 @@ def test_add_select_update_delete_project(testrail_session, delete_project_api, 
                          pytest.param('l', '', True, 2, id='project have name, announcement, show_announcement, suite_mode=2'),
                          pytest.param('l', 'a', True, 3, id='project have name, announcement, show_announcement, suite_mode=3')]
                          )
-def test_add_project_positive_case(testrail_session, delete_project_api, aunthatification, name, announacement, show_announcement, suite_mode):
+def test_add_project_positive_case(
+        testrail_session, delete_project_before, delete_project_later, aunthatification, name, announacement, show_announcement, suite_mode):
     with allure.step('Add project'):
         response = testrail_session.post(url='/add_project',
                            headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'},

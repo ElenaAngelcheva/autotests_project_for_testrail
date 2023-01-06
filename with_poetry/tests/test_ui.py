@@ -54,7 +54,7 @@ def test_authorization_by_an_unregistered_user(browser_management):
 @allure.feature('Ui')
 @allure.severity(Severity.CRITICAL)
 @allure.title('Add and delete project')
-def test_add_project_ui(delete_project_ui, browser_management):
+def test_add_project_ui(delete_project_before, browser_management):
     with allure.step("Authorization"):
         app.auth.open_authorization_pege(url_ui)
         app.auth.set_login_email(user)

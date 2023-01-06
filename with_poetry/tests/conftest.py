@@ -42,20 +42,20 @@ def browser_management(request):
             "enableVideo": True
         }
     }
-    options.capabilities.update(selenoid_capabilities)
-    driver = webdriver.Remote(
-        command_executor=f"https://{login_senenoid}:{password_senenoid}@selenoid.autotests.cloud/wd/hub",
-        options=options
-    )
-    browser.config.driver = driver
-
-    yield browser
-
-    attach.add_html(browser)
-    attach.add_screenshot(browser)
-    attach.add_logs(browser)
-    attach.add_video(browser)
-    browser.quit()
+    # options.capabilities.update(selenoid_capabilities)
+    # driver = webdriver.Remote(
+    #     command_executor=f"https://{login_senenoid}:{password_senenoid}@selenoid.autotests.cloud/wd/hub",
+    #     options=options
+    # )
+    # browser.config.driver = driver
+    #
+    # yield browser
+    #
+    # attach.add_html(browser)
+    # attach.add_screenshot(browser)
+    # attach.add_logs(browser)
+    # attach.add_video(browser)
+    # browser.quit()
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -75,7 +75,18 @@ def aunthatification():
 
 
 @pytest.fixture(scope='function', autouse=True)
-def delete_project_api(testrail_session, aunthatification):
+def delete_project_before(testrail_session, aunthatification):
+    response_select = testrail_session.get(url=f'/get_projects',
+                           headers={'Authorization': 'Basic ' + aunthatification})
+
+    if response_select.json()['projects'] != []:
+        for i in response_select.json()['projects']:
+            testrail_session.post(url=f"/delete_project/{i['id']}",
+                          headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'})
+
+
+@pytest.fixture(scope='function', autouse=True)
+def delete_project_later(testrail_session, aunthatification):
 
     yield
 
@@ -88,15 +99,6 @@ def delete_project_api(testrail_session, aunthatification):
                           headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'})
 
 
-@pytest.fixture(scope='function', autouse=True)
-def delete_project_ui(testrail_session, aunthatification):
-    response_select = testrail_session.get(url=f'/get_projects',
-                           headers={'Authorization': 'Basic ' + aunthatification})
-
-    if response_select.json()['projects'] != []:
-        for i in response_select.json()['projects']:
-            testrail_session.post(url=f"/delete_project/{i['id']}",
-                          headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'})
 
 
 
