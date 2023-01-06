@@ -76,6 +76,19 @@
 > - Удаление не существующего проекта;
     
     
+## :heavy_check_mark: Реализованные UI-проверки
+
+> - Aвторизация:
+>     - зарегистрированным пользователем;
+>     - зарегистрированным пользователем с невалидным паролем;
+>     - несуществующим пользователем;
+> - Создание и удаление нового проекта:
+    
+  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/jenkins.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/>&nbsp;
+ ## Запуск тестов из <a href="[https://www.gurock.com/](https://jenkins.autotests.cloud/job/001-Ang_ev-python_testrail/)" target="_blank">Jenkins</a>
+
+    
+    
     
   
 
