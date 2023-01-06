@@ -42,20 +42,20 @@ def browser_management(request):
             "enableVideo": True
         }
     }
-    # options.capabilities.update(selenoid_capabilities)
-    # driver = webdriver.Remote(
-    #     command_executor=f"https://{login_senenoid}:{password_senenoid}@selenoid.autotests.cloud/wd/hub",
-    #     options=options
-    # )
-    # browser.config.driver = driver
-    #
-    # yield browser
-    #
-    # attach.add_html(browser)
-    # attach.add_screenshot(browser)
-    # attach.add_logs(browser)
-    # attach.add_video(browser)
-    # browser.quit()
+    options.capabilities.update(selenoid_capabilities)
+    driver = webdriver.Remote(
+        command_executor=f"https://{login_senenoid}:{password_senenoid}@selenoid.autotests.cloud/wd/hub",
+        options=options
+    )
+    browser.config.driver = driver
+
+    yield browser
+
+    attach.add_html(browser)
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_video(browser)
+    browser.quit()
 
 
 @pytest.fixture(scope='session', autouse=True)
