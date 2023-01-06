@@ -86,11 +86,10 @@
     
 ## <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/jenkins.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/>&nbsp; Запуск тестов из <a href="https://jenkins.autotests.cloud/job/001-Ang_ev-python_testrail/" target="_blank">Jenkins</a>
     
-Для запуска тестов из Jenkins:
-
- 1. Нажмите кнопку "Собрать с параметрами"
-
-
+ Нажмите кнопку "Собрать с параметрами"
+  <div align="center">
+  <img src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/%D1%81%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D1%83.png" title="Build" alt="Build" width="40" height="40"/>&nbsp; 
+</div>
     
     
     
