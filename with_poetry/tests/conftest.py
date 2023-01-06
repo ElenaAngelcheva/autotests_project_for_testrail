@@ -58,12 +58,12 @@ def browser_management(request):
     browser.quit()
 
 
-@pytest.fixture(scope='session', autouse=True)
+@pytest.fixture(scope='session', autouse=False)
 def testrail_session():
     return BaseSession(base_url=url_api)
 
 
-@pytest.fixture(scope='session', autouse=True)
+@pytest.fixture(scope='session', autouse=False)
 def aunthatification():
     auth = str(
         base64.b64encode(
@@ -74,7 +74,7 @@ def aunthatification():
     return auth
 
 
-@pytest.fixture(scope='function', autouse=True)
+@pytest.fixture(scope='function', autouse=False)
 def delete_project_before(testrail_session, aunthatification):
     response_select = testrail_session.get(url=f'/get_projects',
                            headers={'Authorization': 'Basic ' + aunthatification})
@@ -85,7 +85,7 @@ def delete_project_before(testrail_session, aunthatification):
                           headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'})
 
 
-@pytest.fixture(scope='function', autouse=True)
+@pytest.fixture(scope='function', autouse=False)
 def delete_project_later(testrail_session, aunthatification):
 
     yield
