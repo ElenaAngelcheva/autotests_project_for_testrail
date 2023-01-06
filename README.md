@@ -127,7 +127,7 @@
 
 В отчетах Allure для каждого UI-теста прикреплен не только скриншот, но и видео прохождения теста  
 
-![Game Process](https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/video.gif))
+![Video](https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/video.gif))
     
 ##  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/telegram.png" title="Telegram" alt="Telegram" width="40" height="40"/>&nbsp; Telegram
     Настроена отправка отчета в Telegram
