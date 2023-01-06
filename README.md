@@ -84,7 +84,12 @@
 >     - несуществующим пользователем;
 > - Создание и удаление нового проекта:
     
-# <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/jenkins.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/>&nbsp; Запуск тестов из <a href="https://jenkins.autotests.cloud/job/001-Ang_ev-python_testrail/" target="_blank">Jenkins</a>
+## <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/jenkins.svg" title="Jenkins" alt="Jenkins" width="40" height="40"/>&nbsp; Запуск тестов из <a href="https://jenkins.autotests.cloud/job/001-Ang_ev-python_testrail/" target="_blank">Jenkins</a>
+    
+Для запуска тестов из Jenkins:
+
+    1. Нажмите кнопку "Собрать с параметрами"
+
 
     
     
