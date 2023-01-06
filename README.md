@@ -118,6 +118,12 @@
 <div align="center">
 <img src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/allure%20homepage.PNG" title="Allure homepage" alt="Allure homepage"/>&nbsp; 
 </div>
+
+<div align="center">
+<img src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/allure%20example%20test.PNG" title="Allure homepage" alt="Allure example test"/>&nbsp; 
+</div>
+
+
     
 ##  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/telegram.png" title="Telegram" alt="Telegram" width="40" height="40"/>&nbsp; Telegram
     Настроена отправка отчета в Telegram
