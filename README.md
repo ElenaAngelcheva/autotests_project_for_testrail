@@ -112,6 +112,8 @@
     allure serve .\allure-results
 ```
     
+##  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/telegram.png" title="Telegram" alt="Telegram" width="40" height="40"/>&nbsp; Telegram
+    
   
 
 
