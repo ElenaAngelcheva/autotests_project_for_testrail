@@ -123,17 +123,20 @@
 <img src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/allure%20example%20test.PNG" title="Allure homepage" alt="Allure example test"/>&nbsp; 
 </div>
 
-## :movie_camera: Пример видео тестового прогона
-
-В отчетах Allure для каждого UI-теста прикреплен не только скриншот, но и видео прохождения теста  
-<video src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/video.mp4"></video>
-    
 ##  <img src="https://github.com/ElenaAngelcheva/ElenaAngelcheva/blob/main/img/logos/telegram.png" title="Telegram" alt="Telegram" width="40" height="40"/>&nbsp; Telegram
     Настроена отправка отчета в Telegram
     
 <div align="center">
 <img src="https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/%D1%81%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D0%BC%D0%BC.PNG" title="telegram" alt="telegram"/>&nbsp; 
 </div>
+    
+## :movie_camera: Пример видео тестового прогона
+
+В отчетах Allure для каждого UI-теста прикреплен не только скриншот, но и видео прохождения теста  
+
+![Video](https://github.com/ElenaAngelcheva/autotests_project_for_testrail/blob/main/with_poetry/utils/img/logos/video.gif))
+    
+
     
 
 
