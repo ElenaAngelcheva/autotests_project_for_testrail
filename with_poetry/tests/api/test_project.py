@@ -15,7 +15,7 @@ def test_add_select_update_delete_project(testrail_session, delete_project_befor
     with allure.step('Add project'):
         response_add = testrail_session.post(url='/add_project',
                                              headers={'Authorization': 'Basic ' + authatification, 'Content-Type': 'application/json'},
-                                             json={'name': 'Projet X'})
+                                             json={'name': 'Project X'})
         id = response_add.json()['id']
 
     with allure.step('Select project'):
@@ -25,7 +25,7 @@ def test_add_select_update_delete_project(testrail_session, delete_project_befor
     with allure.step('Uptate project'):
         response_update = testrail_session.post(url=f'/update_project/{id}',
                                                 headers={'Authorization': 'Basic ' + authatification},
-                                                json={'name': 'Projet New'})
+                                                json={'name': 'Project New'})
     with allure.step('Delete project'):
         response_delete = testrail_session.post(url=f'/delete_project/{id}',
                                                 headers={'Authorization': 'Basic ' + authatification, 'Content-Type': 'application/json'})
@@ -37,7 +37,7 @@ def test_add_select_update_delete_project(testrail_session, delete_project_befor
         assert response_add.json()['id'] == response_select.json()['id']
         assert response_update.status_code == 200
         assert response_add.json()['id'] == response_update.json()['id']
-        assert response_update.json()['name'] == 'Projet New'
+        assert response_update.json()['name'] == 'Project New'
         assert response_delete.status_code == 200
 
 
@@ -104,7 +104,7 @@ def test_update_project_negative_case(testrail_session, authatification):
     with allure.step('Update project'):
         response_update = testrail_session.post(url=f'/update_project/{1}',
                                                 headers={'Authorization': 'Basic ' + authatification},
-                                                json={'name': 'Projet New'})
+                                                json={'name': 'Project New'})
     with allure.step('Result'):
         assert response_update.status_code == 200
         assert response_update.json() == {'error': 'Field :project_id is not a valid or accessible project.'}
@@ -118,7 +118,7 @@ def test_update_project_negative_case(testrail_session, authatification):
 @allure.title('Delete project negative case')
 def test_delete_project_negative_case(testrail_session, authatification):
 
-    with allure.step('Delete progect'):
+    with allure.step('Delete project'):
         response_delete = testrail_session.post(url=f'/delete_project/{1}',
                                                 headers={'Authorization': 'Basic ' + authatification(), 'Content-Type': 'application/json'})
 
