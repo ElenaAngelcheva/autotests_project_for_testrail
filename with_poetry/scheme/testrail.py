@@ -1,6 +1,6 @@
 from voluptuous import Schema, Required, PREVENT_EXTRA, Optional,Any
 
-CreatePprojectSchema = Schema({
+create_project_scheme = Schema({
     "id": int,
     Required('name'): str,
     "announcement": Any(str,None),

@@ -4,13 +4,13 @@ from selene import have
 
 class DialogConfirm:
     @staticmethod
-    def delete():
+    def dialog_confirm():
         browser.element('span[class="dialog-confirm"]>strong').click()
 
     @staticmethod
-    def submit():
+    def submit_delete_dialog():
         browser.element('[id="deleteDialog"]>:nth-child(3)>a').click()
 
     @staticmethod
-    def lack_project():
+    def cheacking_lack_project():
         browser.element('[class="grid"]>tbody>tr>td').should(have.exact_text('No projects.'))

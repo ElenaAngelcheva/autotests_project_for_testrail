@@ -64,7 +64,7 @@ def testrail_session():
 
 
 @pytest.fixture(scope='session', autouse=False)
-def aunthatification():
+def authatification():
     auth = str(
         base64.b64encode(
             bytes('%s:%s' % (user, password), 'utf-8')
@@ -75,28 +75,28 @@ def aunthatification():
 
 
 @pytest.fixture(scope='function', autouse=False)
-def delete_project_before(testrail_session, aunthatification):
+def delete_project_before(testrail_session, authatification):
     response_select = testrail_session.get(url=f'/get_projects',
-                           headers={'Authorization': 'Basic ' + aunthatification})
+                                           headers={'Authorization': 'Basic ' + authatification})
 
     if response_select.json()['projects'] != []:
         for i in response_select.json()['projects']:
             testrail_session.post(url=f"/delete_project/{i['id']}",
-                          headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'})
+                                  headers={'Authorization': 'Basic ' + authatification, 'Content-Type': 'application/json'})
 
 
 @pytest.fixture(scope='function', autouse=False)
-def delete_project_later(testrail_session, aunthatification):
+def delete_project_later(testrail_session, authatification):
 
     yield
 
     response_select = testrail_session.get(url=f'/get_projects',
-                           headers={'Authorization': 'Basic ' + aunthatification})
+                                           headers={'Authorization': 'Basic ' + authatification})
 
     if response_select.json()['projects'] != []:
         for i in response_select.json()['projects']:
             testrail_session.post(url=f"/delete_project/{i['id']}",
-                          headers={'Authorization': 'Basic ' + aunthatification, 'Content-Type': 'application/json'})
+                                  headers={'Authorization': 'Basic ' + authatification, 'Content-Type': 'application/json'})
 
 
 

@@ -4,7 +4,7 @@ from with_poetry.testrail_tests.model.components.new_project import AddProject
 from with_poetry.testrail_tests.model.components.settings import Settings
 
 
-class Application_manager:
+class ApplicationManager:
     auth = Authorization()
     add = AddProject()
     settings = Settings()
@@ -13,4 +13,4 @@ class Application_manager:
 
 
 
-app = Application_manager
+app = ApplicationManager

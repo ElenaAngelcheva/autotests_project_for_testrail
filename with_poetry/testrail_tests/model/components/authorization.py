@@ -1,8 +1,9 @@
 from selene.support.shared import browser
 from selene import have
 
+
 class Authorization:
-    def open_authorization_pege(self, value):
+    def open_authorization_page(self, value):
         browser.open(value)
         return self
 
@@ -15,14 +16,14 @@ class Authorization:
         return self
 
     @staticmethod
-    def submit():
+    def submit_auht():
         browser.element('button[id="button_primary"]').click()
 
     @staticmethod
-    def title():
+    def checking_title():
         browser.element('div[class ="top-section text-ppp"]').should(have.exact_text('TestRail QA'))
 
     @staticmethod
-    def loginpage_message_title():
+    def checking_loginpage_message_title():
         browser.element('div[class="error-text"]').should(have.exact_text(
             'Email/Login or Password is incorrect. Please try again.'))

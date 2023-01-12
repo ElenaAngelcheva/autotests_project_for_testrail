@@ -4,29 +4,29 @@ from selene import have
 
 class AddProject:
     @staticmethod
-    def new_project():
+    def add_new_project():
         browser.element('a[id = "sidebar-projects-add"]').click()
 
-    def neme_project(self, value):
+    def set_name_project(self, value):
         browser.element('input[id = "name"]').type(value)
         return self
 
-    def announcement_project(self, value):
+    def add_announcement_project(self, value):
         browser.element('[id = "announcement"]').type(value)
         return self
 
     @staticmethod
-    def show_announcement():
+    def choice_show_announcement():
         browser.element('[id = "show_announcement"]').click()
 
     @staticmethod
-    def suites_model_multiple ():
+    def choice_suites_model_multiple():
         browser.element('[id = "suite_mode_multi"]').click()
 
     @staticmethod
-    def confirm():
+    def confirming_create_project():
         browser.element('[id = "accept"]').click()
 
-    def create_check(self, value):
+    def checking_project_creation(self, value):
         browser.element('a[id="navigation-project"]').should(have.exact_text(value))
 
